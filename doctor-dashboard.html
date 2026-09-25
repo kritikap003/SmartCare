@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Dashboard | SmartCare</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+    <nav class="navbar container">
+
+        <a href="index.html" class="logo">
+            <span class="logo-icon">✚</span>
+            Smart<span>Care</span>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="doctor-dashboard.html" class="active">Dashboard</a></li>
+            <li><a href="doctors.html">Doctors</a></li>
+            <li><a href="notifications.html">Notifications</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+
+<main class="dashboard-page">
+
+    <div class="container">
+
+        <section class="dashboard-welcome">
+
+            <div>
+                <span class="section-label">DOCTOR DASHBOARD</span>
+                <h1>Good Morning, Dr. Amit 👋</h1>
+                <p>Here's your patient and appointment overview.</p>
+            </div>
+
+        </section>
+
+
+        <section class="doctor-info-banner">
+
+            <div class="large-doctor-avatar">AV</div>
+
+            <div>
+                <h2>Dr. Amit Verma</h2>
+                <p>Cardiologist • MBBS, MD Cardiology</p>
+                <p>12 Years Experience</p>
+            </div>
+
+        </section>
+
+
+        <section class="dashboard-grid">
+
+            <article class="dashboard-card">
+                <div class="card-icon blue">📅</div>
+                <h3>Today's Appointments</h3>
+                <strong>18</strong>
+                <span>Scheduled today</span>
+            </article>
+
+            <article class="dashboard-card">
+                <div class="card-icon orange">👥</div>
+                <h3>Patients Waiting</h3>
+                <strong>08</strong>
+                <span>Currently waiting</span>
+            </article>
+
+            <article class="dashboard-card">
+                <div class="card-icon green">✅</div>
+                <h3>Completed Visits</h3>
+                <strong>10</strong>
+                <span>Completed today</span>
+            </article>
+
+            <article class="dashboard-card">
+                <div class="card-icon purple">⏱️</div>
+                <h3>Average Consultation</h3>
+                <strong>14 min</strong>
+                <span>Today's average</span>
+            </article>
+
+        </section>
+
+
+        <section class="content-card">
+
+            <div class="card-header">
+                <div>
+                    <span class="section-label">PATIENT QUEUE</span>
+                    <h2>Today's Patient Queue</h2>
+                </div>
+            </div>
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Token</th>
+                            <th>Patient</th>
+                            <th>Time</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>#41</td>
+                            <td>Riya Sharma</td>
+                            <td>3:00 PM</td>
+                            <td><span class="status current">Current</span></td>
+                            <td><button class="small-button">Call Patient</button></td>
+                        </tr>
+
+                        <tr>
+                            <td>#42</td>
+                            <td>Arjun Mehta</td>
+                            <td>3:15 PM</td>
+                            <td><span class="status waiting">Waiting</span></td>
+                            <td><button class="small-button">Call</button></td>
+                        </tr>
+
+                        <tr>
+                            <td>#43</td>
+                            <td>Neha Kapoor</td>
+                            <td>3:30 PM</td>
+                            <td><span class="status waiting">Waiting</span></td>
+                            <td><button class="small-button">Call</button></td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </div>
+
+</main>
+
+</body>
+</html>

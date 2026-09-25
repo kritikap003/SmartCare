@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Dashboard | SmartCare</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="dashboard-header">
+    <nav class="navbar container">
+
+        <a href="index.html" class="logo">
+            <span class="logo-icon">✚</span>
+            Smart<span>Care</span>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="patient-dashboard.html" class="active">Dashboard</a></li>
+            <li><a href="doctors.html">Doctors</a></li>
+            <li><a href="appointments.html">Appointments</a></li>
+            <li><a href="queue.html">Queue</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+
+<main class="dashboard-page">
+
+    <div class="container">
+
+        <section class="dashboard-welcome">
+            <div>
+                <span class="section-label">PATIENT DASHBOARD</span>
+                <h1>Good Morning,Patient 👋</h1>
+                <p>Here's your healthcare overview for today.</p>
+            </div>
+
+            <a href="notifications.html" class="notification-button">
+                🔔 Notifications
+            </a>
+        </section>
+
+
+        <section class="dashboard-grid">
+
+            <a href="appointments.html" class="dashboard-card">
+                <div class="card-icon blue">📅</div>
+                <h3>Upcoming Appointments</h3>
+                <strong>02</strong>
+                <span>View appointments →</span>
+            </a>
+
+            <a href="completed.html" class="dashboard-card">
+                <div class="card-icon green">✅</div>
+                <h3>Completed Visits</h3>
+                <strong>12</strong>
+                <span>View history →</span>
+            </a>
+
+            <a href="doctors.html" class="dashboard-card">
+                <div class="card-icon purple">👨‍⚕️</div>
+                <h3>Available Doctors</h3>
+                <strong>24</strong>
+                <span>Find doctor →</span>
+            </a>
+
+            <a href="departments.html" class="dashboard-card">
+                <div class="card-icon orange">🏥</div>
+                <h3>Departments</h3>
+                <strong>08</strong>
+                <span>Explore departments →</span>
+            </a>
+
+        </section>
+
+
+        <section class="two-column-layout">
+
+            <article class="content-card">
+
+                <div class="card-header">
+                    <div>
+                        <span class="section-label">NEXT APPOINTMENT</span>
+                        <h2>Dr. Amit Verma</h2>
+                    </div>
+
+                    <span class="status success">Confirmed</span>
+                </div>
+
+                <div class="doctor-mini">
+                    <div class="doctor-avatar">AV</div>
+
+                    <div>
+                        <h3>Dr. Amit Verma</h3>
+                        <p>Cardiologist • MBBS, MD Cardiology</p>
+                        <p>📅 18 September 2026 • 3:30 PM</p>
+                    </div>
+                </div>
+
+                <a href="appointments.html" class="btn btn-primary">
+                    View Appointment
+                </a>
+
+            </article>
+
+
+            <article class="content-card queue-card">
+
+                <div class="card-header">
+                    <div>
+                        <span class="section-label">SMART QUEUE</span>
+                        <h2>Your Token #47</h2>
+                    </div>
+
+                    <span class="status waiting">Waiting</span>
+                </div>
+
+                <div class="queue-stats">
+
+                    <div>
+                        <strong>8</strong>
+                        <span>People Before You</span>
+                    </div>
+
+                    <div>
+                        <strong>24 min</strong>
+                        <span>Estimated Waiting</span>
+                    </div>
+
+                    <div>
+                        <strong>3:42 PM</strong>
+                        <span>Expected Turn</span>
+                    </div>
+
+                </div>
+
+                <a href="queue.html" class="btn btn-secondary">
+                    Track Queue
+                </a>
+
+            </article>
+
+        </section>
+
+
+        <section class="content-card">
+
+            <div class="card-header">
+                <div>
+                    <span class="section-label">QUICK ACTIONS</span>
+                    <h2>What would you like to do?</h2>
+                </div>
+            </div>
+
+            <div class="quick-actions">
+
+                <a href="doctors.html">👨‍⚕️ <span>Find Doctor</span></a>
+                <a href="appointments.html">📅 <span>Book Appointment</span></a>
+                <a href="queue.html">🎟️ <span>Join Queue</span></a>
+                <a href="#assistant">🤖 <span>AI Assistant</span></a>
+
+            </div>
+
+        </section>
+
+
+        <section class="content-card">
+
+            <div class="card-header">
+                <div>
+                    <span class="section-label">RECENT ACTIVITY</span>
+                    <h2>Recent Appointments</h2>
+                </div>
+            </div>
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Doctor</th>
+                            <th>Department</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>Dr. Amit Verma</td>
+                            <td>Cardiology</td>
+                            <td>18 Sep 2026</td>
+                            <td>3:30 PM</td>
+                            <td><span class="status success">Confirmed</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Dr. Priya Mehta</td>
+                            <td>Dermatology</td>
+                            <td>10 Sep 2026</td>
+                            <td>11:00 AM</td>
+                            <td><span class="status completed">Completed</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Dr. Rahul Singh</td>
+                            <td>ENT</td>
+                            <td>02 Sep 2026</td>
+                            <td>2:00 PM</td>
+                            <td><span class="status completed">Completed</span></td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </div>
+
+</main>
+
+
+<aside class="chatbot" id="assistant">
+
+    <div class="chatbot-header">
+        🤖 SmartCare Assistant
+    </div>
+
+    <div class="chat-message ai-message">
+        Hi! I'm your SmartCare Assistant. How can I help you?
+    </div>
+
+    <div class="chat-message user-message">
+        I need help finding a doctor.
+    </div>
+
+    <div class="chat-message ai-message">
+        You can browse our doctor directory to find a suitable specialist.
+    </div>
+
+    <div class="chat-input">
+        <input type="text" placeholder="Type your question...">
+        <button>➤</button>
+    </div>
+
+</aside>
+
+
+<footer class="site-footer">
+    <div class="container footer-content">
+        <p>© 2026 SmartCare Academic Project</p>
+        <a href="profile.html">My Profile</a>
+    </div>
+</footer>
+
+</body>
+</html>

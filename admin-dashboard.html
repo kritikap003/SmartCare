@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | SmartCare</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+    <nav class="navbar container">
+
+        <a href="index.html" class="logo">
+            <span class="logo-icon">✚</span>
+            Smart<span>Care</span>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="admin-dashboard.html" class="active">Dashboard</a></li>
+            <li><a href="doctors.html">Doctors</a></li>
+            <li><a href="departments.html">Departments</a></li>
+            <li><a href="notifications.html">Notifications</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+
+<main class="dashboard-page">
+
+    <div class="container">
+
+        <section class="dashboard-welcome">
+
+            <div>
+                <span class="section-label">HOSPITAL ADMINISTRATION</span>
+                <h1>Hospital Overview</h1>
+                <p>Monitor hospital activity and queue information.</p>
+            </div>
+
+        </section>
+
+
+        <section class="dashboard-grid">
+
+            <article class="dashboard-card">
+                <div class="card-icon blue">👨‍⚕️</div>
+                <h3>Total Doctors</h3>
+                <strong>52</strong>
+                <span>Registered doctors</span>
+            </article>
+
+            <article class="dashboard-card">
+                <div class="card-icon green">👥</div>
+                <h3>Total Patients</h3>
+                <strong>2,840</strong>
+                <span>Registered patients</span>
+            </article>
+
+            <article class="dashboard-card">
+                <div class="card-icon orange">🎟️</div>
+                <h3>Active Queues</h3>
+                <strong>14</strong>
+                <span>Currently active</span>
+            </article>
+
+            <article class="dashboard-card">
+                <div class="card-icon purple">🏥</div>
+                <h3>Departments</h3>
+                <strong>08</strong>
+                <span>Hospital departments</span>
+            </article>
+
+        </section>
+
+
+        <section class="content-card">
+
+            <div class="card-header">
+                <h2>Department Queue</h2>
+            </div>
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Department</th>
+                            <th>Patients</th>
+                            <th>Active Counters</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>Cardiology</td>
+                            <td>32</td>
+                            <td>3</td>
+                            <td><span class="status high">High</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Dermatology</td>
+                            <td>15</td>
+                            <td>2</td>
+                            <td><span class="status success">Low</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>General Medicine</td>
+                            <td>26</td>
+                            <td>4</td>
+                            <td><span class="status waiting">Moderate</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>ENT</td>
+                            <td>18</td>
+                            <td>2</td>
+                            <td><span class="status waiting">Moderate</span></td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <section class="content-card">
+
+            <span class="section-label">HOSPITAL ANALYTICS</span>
+            <h2>Hospital Crowd Analytics</h2>
+
+            <div class="crowd-grid">
+
+                <div class="crowd-box low">
+                    <strong>8 AM</strong>
+                    <span>Low</span>
+                </div>
+
+                <div class="crowd-box moderate">
+                    <strong>10 AM</strong>
+                    <span>Moderate</span>
+                </div>
+
+                <div class="crowd-box high">
+                    <strong>12 PM</strong>
+                    <span>High</span>
+                </div>
+
+                <div class="crowd-box high">
+                    <strong>2 PM</strong>
+                    <span>High</span>
+                </div>
+
+                <div class="crowd-box moderate">
+                    <strong>4 PM</strong>
+                    <span>Moderate</span>
+                </div>
+
+                <div class="crowd-box low">
+                    <strong>6 PM</strong>
+                    <span>Low</span>
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+</main>
+
+</body>
+</html>

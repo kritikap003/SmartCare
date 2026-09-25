@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointments | SmartCare</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+    <nav class="navbar container">
+
+        <a href="index.html" class="logo">
+            <span class="logo-icon">✚</span>
+            Smart<span>Care</span>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="patient-dashboard.html">Dashboard</a></li>
+            <li><a href="doctors.html">Doctors</a></li>
+            <li><a href="appointments.html" class="active">Appointments</a></li>
+            <li><a href="queue.html">Queue</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+
+<main class="section">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <span class="section-label">APPOINTMENTS</span>
+            <h1>Book an appointment</h1>
+            <p>Select your department, doctor and preferred time.</p>
+        </div>
+
+
+        <section class="content-card">
+
+            <form action="#" method="post">
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+                        <label for="department">Department</label>
+
+                        <select id="department" name="department">
+                            <option>Select department</option>
+                            <option>Cardiology</option>
+                            <option>Dermatology</option>
+                            <option>General Medicine</option>
+                            <option>ENT</option>
+                            <option>Orthopedics</option>
+                            <option>Neurology</option>
+                        </select>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="doctor">Doctor</label>
+
+                        <select id="doctor" name="doctor">
+                            <option>Select doctor</option>
+                            <option>Dr. Amit Verma</option>
+                            <option>Dr. Priya Mehta</option>
+                            <option>Dr. Rahul Singh</option>
+                            <option>Dr. Sneha Kapoor</option>
+                        </select>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="appointment-date">Date</label>
+                        <input type="date" id="appointment-date">
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="appointment-time">Time</label>
+                        <input type="time" id="appointment-time">
+                    </div>
+
+
+                    <div class="form-group full-span">
+                        <label for="reason">Reason for Visit</label>
+
+                        <textarea
+                            id="reason"
+                            placeholder="Briefly describe the reason for your visit">
+                        </textarea>
+                    </div>
+
+                </div>
+
+                <button type="submit" class="btn btn-primary">
+                    Book Appointment
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <section class="content-card">
+
+            <div class="card-header">
+                <div>
+                    <span class="section-label">MY APPOINTMENTS</span>
+                    <h2>Appointment List</h2>
+                </div>
+            </div>
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Doctor</th>
+                            <th>Department</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>Dr. Amit Verma</td>
+                            <td>Cardiology</td>
+                            <td>18 Sep 2026</td>
+                            <td>3:30 PM</td>
+                            <td><span class="status success">Confirmed</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Dr. Priya Mehta</td>
+                            <td>Dermatology</td>
+                            <td>25 Sep 2026</td>
+                            <td>11:00 AM</td>
+                            <td><span class="status waiting">Upcoming</span></td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </div>
+
+</main>
+
+</body>
+</html>

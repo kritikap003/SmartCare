@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Queue | SmartCare</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+    <nav class="navbar container">
+
+        <a href="index.html" class="logo">
+            <span class="logo-icon">✚</span>
+            Smart<span>Care</span>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="patient-dashboard.html">Dashboard</a></li>
+            <li><a href="appointments.html">Appointments</a></li>
+            <li><a href="queue.html" class="active">Smart Queue</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+
+<main class="section">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <span class="section-label">SMART QUEUE</span>
+            <h1>Know your turn before you wait.</h1>
+            <p>Track your digital token and estimated waiting time.</p>
+        </div>
+
+
+        <section class="queue-main-card">
+
+            <div class="queue-token">
+                <span>Your Digital Token</span>
+                <strong>#47</strong>
+            </div>
+
+            <div class="queue-doctor">
+                <h2>Dr. Amit Verma</h2>
+                <p>Cardiology</p>
+            </div>
+
+
+            <div class="queue-stat-grid">
+
+                <article>
+                    <strong>8</strong>
+                    <span>People Before You</span>
+                </article>
+
+                <article>
+                    <strong>24 min</strong>
+                    <span>Estimated Waiting</span>
+                </article>
+
+                <article>
+                    <strong>3:42 PM</strong>
+                    <span>Expected Turn</span>
+                </article>
+
+            </div>
+
+
+            <div class="progress-section">
+
+                <div class="progress-label">
+                    <span>Queue Progress</span>
+                    <strong>65%</strong>
+                </div>
+
+                <div class="progress-bar">
+                    <span></span>
+                </div>
+
+            </div>
+
+
+            <div class="button-group">
+
+                <a href="#" class="btn btn-primary">Refresh Queue</a>
+                <a href="#" class="btn btn-secondary">Cancel Queue</a>
+                <a href="appointments.html" class="btn btn-secondary">
+                    Reschedule
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <section class="content-card">
+
+            <div class="card-header">
+                <h2>Current Queue</h2>
+            </div>
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Token</th>
+                            <th>Status</th>
+                            <th>Counter</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>#39</td>
+                            <td><span class="status success">Being Served</span></td>
+                            <td>Counter 2</td>
+                        </tr>
+
+                        <tr>
+                            <td>#40 – #46</td>
+                            <td><span class="status waiting">Waiting</span></td>
+                            <td>—</td>
+                        </tr>
+
+                        <tr>
+                            <td>#47</td>
+                            <td><span class="status current">Your Token</span></td>
+                            <td>—</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <section class="voice-card">
+
+            <div class="voice-icon">🎤</div>
+
+            <div>
+                <h2>Voice Navigation</h2>
+                <p>Use voice commands to navigate SmartCare.</p>
+            </div>
+
+            <button class="voice-button">
+                Start Voice
+            </button>
+
+        </section>
+
+    </div>
+
+</main>
+
+</body>
+</html>
